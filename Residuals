@@ -1,0 +1,12 @@
+
+# residuals 
+
+
+res <- resid(GLOBAL_MOBULAS)
+plot(density(res))
+plot(fitted(GLOBAL_MOBULAS), res)
+res <- resid(GLOBAL_WHALESHARKS_NO_LUNAR)
+plot(fitted(GLOBAL_WHALESHARKS_NO_LUNAR), res)
+res <- resid(GLOBAL_MANTAS)
+plot(fitted(GLOBAL_MANTAS), res)
+plot(hist(res))
